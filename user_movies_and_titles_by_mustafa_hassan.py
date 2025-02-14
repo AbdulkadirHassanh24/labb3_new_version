@@ -25,7 +25,7 @@ def get_movie_info(title):
         return None
 
 
-# Function to search movies by keyword
+
 def key_word(keyword):
     url = f'{base_url}s={keyword}'
     response = requests.get(url)
@@ -42,9 +42,9 @@ def key_word(keyword):
         print(f"Failed to retrieve data: {response.status_code}")
 
 
-# Main function to handle the menu and user input
+
 def main():
-    search_history = []  # To store search history
+    search_history = []  
 
     print("Välkommen till mitt program där kan du söka om filmer och få info\n")
 
